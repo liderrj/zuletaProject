@@ -34,7 +34,7 @@ class UsuariosController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Usuario->exists($id)) {
-			throw new NotFoundException(__('Invalid usuario'));
+			throw new NotFoundException(__('Usuario Inválido'));
 		}
 		$options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
 		$this->set('usuario', $this->Usuario->find('first', $options));
@@ -49,10 +49,10 @@ class UsuariosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Usuario->create();
 			if ($this->Usuario->save($this->request->data)) {
-				$this->Session->setFlash(__('The usuario has been saved.'));
+				$this->Session->setFlash(__('EL usuario ha sido guardado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The usuario could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El usuario no pudo ser guardado, intente nuevamente.'));
 			}
 		}
 	}
@@ -66,14 +66,15 @@ class UsuariosController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Usuario->exists($id)) {
-			throw new NotFoundException(__('Invalid usuario'));
+			throw new NotFoundException(__('Usuario Inválido'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+			$this->Usuario->id = $id;
 			if ($this->Usuario->save($this->request->data)) {
-				$this->Session->setFlash(__('The usuario has been saved.'));
+				$this->Session->setFlash(__('El usuario ha sido guardado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The usuario could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El usuario no pudo ser guardado, intente nuevamente.'));
 			}
 		} else {
 			$options = array('conditions' => array('Usuario.' . $this->Usuario->primaryKey => $id));
@@ -91,13 +92,13 @@ class UsuariosController extends AppController {
 	public function delete($id = null) {
 		$this->Usuario->id = $id;
 		if (!$this->Usuario->exists()) {
-			throw new NotFoundException(__('Invalid usuario'));
+			throw new NotFoundException(__('Usuario Inválido'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Usuario->delete()) {
-			$this->Session->setFlash(__('The usuario has been deleted.'));
+			$this->Session->setFlash(__('El usuario ha sido borrado.'));
 		} else {
-			$this->Session->setFlash(__('The usuario could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('El usuario no pudo ser borrado, intente nuevamente.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}}

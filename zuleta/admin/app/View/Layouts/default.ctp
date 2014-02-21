@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Administración de Sistema de Búsqueda de Tesis y Pasantías de Ingeniería Metalúrgica');
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,6 +30,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('smoothness/jquery-ui-1.10.4.custom.min.css');
+
+		echo $this->Html->script('jquery-1.9.1.js');
+		echo $this->Html->script('jquery-ui-1.10.3.custom.min.js');
+		echo $this->Html->script('scripts.js');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -48,14 +53,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
+			<?php /*echo $this->Html->link(
 					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
 					'http://www.cakephp.org/',
 					array('target' => '_blank', 'escape' => false)
-				);
+				);*/
 			?>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
