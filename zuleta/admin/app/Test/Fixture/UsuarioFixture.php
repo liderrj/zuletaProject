@@ -18,7 +18,7 @@ class UsuarioFixture extends CakeTestFixture {
 		'clave' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'login' => array('column' => 'login', 'unique' => 1)
+			'ulogin' => array('column' => 'login', 'unique' => 1)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
