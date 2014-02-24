@@ -30,5 +30,31 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
+
 class AppController extends Controller {
+public $components = array(
+'Session',
+    'RequestHandler'
+);
+public $helpers = array("Session");
+public function beforeFilter(){
+	$this->Session->delete('redi');
+	
+}
+
+public function afterFilter(){
+
+	if(!$this->Session->check('login')){
+			
+			if(!$this->Session->check('redi')){
+				$this->Session->write('redi',true);
+				$this->redirect('/');
+
+			}
+				
+        
+	}
+
+}
+
 }

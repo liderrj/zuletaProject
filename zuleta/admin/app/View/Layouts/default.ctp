@@ -44,7 +44,56 @@ $cakeDescription = __d('cake_dev', 'Administración de Sistema de Búsqueda de T
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1><?php echo $this->Html->link($cakeDescription, '#'); ?></h1>
+			<?php
+
+				if($this->Session->check('login')):
+			?>
+			<nav>
+				<ul>
+					<li><?php 
+						echo $this->Html->link(
+											    'Usuarios',
+											    array(
+											        'controller' => 'usuarios',
+											        'action' => 'index',
+											        'full_base' => true
+											    )
+											);
+					 ?></li>
+					<li><?php 
+						echo $this->Html->link(
+											    'Categorías',
+											    array(
+											        'controller' => 'categoria',
+											        'action' => 'index',
+											        'full_base' => true
+											    )
+											);
+					 ?></li>
+					 <li><?php 
+						echo $this->Html->link(
+											    'Proyectos',
+											    array(
+											        'controller' => 'proyectos',
+											        'action' => 'index',
+											        'full_base' => true
+											    )
+											);
+					 ?></li>
+					 <li><?php 
+						echo $this->Html->link(
+											    'Salir',
+											    array(
+											        'controller' => 'usuarios',
+											        'action' => 'logout',
+											        'full_base' => true
+											    )
+											);
+					 ?></li>
+				</ul>
+			</nav>
+		<?php endif; ?>
 		</div>
 		<div id="content">
 

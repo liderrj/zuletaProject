@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"p",
+				"padding-bottom"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
 				"nu",
 				"nuevamente"
 			],
@@ -24,20 +48,12 @@
 				"array"
 			],
 			[
-				"m",
-				"margin-left"
-			],
-			[
 				"t",
 				"table-cell"
 			],
 			[
 				"pi",
 				"pointer"
-			],
-			[
-				"p",
-				"padding-left"
 			],
 			[
 				"l",
@@ -107,7 +123,7 @@
 			"file": "zuleta/admin/app/Config/core.php",
 			"settings":
 			{
-				"buffer_size": 14373,
+				"buffer_size": 14370,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +155,7 @@
 			"file": "zuleta/admin/app/Controller/UsuariosController.php",
 			"settings":
 			{
-				"buffer_size": 2584,
+				"buffer_size": 3231,
 				"line_ending": "Windows"
 			}
 		},
@@ -155,7 +171,7 @@
 			"file": "zuleta/admin/app/Model/Usuario.php",
 			"settings":
 			{
-				"buffer_size": 1501,
+				"buffer_size": 1503,
 				"line_ending": "Windows"
 			}
 		},
@@ -165,6 +181,38 @@
 			{
 				"buffer_size": 1211,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "zuleta/admin/app/View/Layouts/default.ctp",
+			"settings":
+			{
+				"buffer_size": 3093,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "zuleta/admin/app/webroot/css/cake.generic.css",
+			"settings":
+			{
+				"buffer_size": 15721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "zuleta/admin/app/View/Pages/home.ctp",
+			"settings":
+			{
+				"buffer_size": 702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "zuleta/admin/app/Controller/AppController.php",
+			"settings":
+			{
+				"buffer_size": 1496,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -265,7 +313,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -300,15 +348,15 @@
 					"file": "zuleta/admin/app/Config/core.php",
 					"settings":
 					{
-						"buffer_size": 14373,
+						"buffer_size": 14370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8841,
-								8841
+								0,
+								0
 							]
 						],
 						"settings":
@@ -334,8 +382,8 @@
 						"selection":
 						[
 							[
-								841,
-								694
+								181,
+								181
 							]
 						],
 						"settings":
@@ -344,7 +392,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -408,15 +456,15 @@
 					"file": "zuleta/admin/app/Controller/UsuariosController.php",
 					"settings":
 					{
-						"buffer_size": 2584,
+						"buffer_size": 3231,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								3223,
+								3223
 							]
 						],
 						"settings":
@@ -425,7 +473,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 214.0,
+						"translation.y": 2446.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -462,15 +510,15 @@
 					"file": "zuleta/admin/app/Model/Usuario.php",
 					"settings":
 					{
-						"buffer_size": 1501,
+						"buffer_size": 1503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1411,
-								1411
+								0,
+								0
 							]
 						],
 						"settings":
@@ -479,7 +527,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 848.0,
+						"translation.y": 66.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -496,8 +544,89 @@
 						"selection":
 						[
 							[
-								127,
-								127
+								1015,
+								1098
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 454.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "zuleta/admin/app/View/Layouts/default.ctp",
+					"settings":
+					{
+						"buffer_size": 3093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2589,
+								2589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1572.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "zuleta/admin/app/webroot/css/cake.generic.css",
+					"settings":
+					{
+						"buffer_size": 15721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15719,
+								15719
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 16935.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "zuleta/admin/app/View/Pages/home.ctp",
+					"settings":
+					{
+						"buffer_size": 702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								6
 							]
 						],
 						"settings":
@@ -507,6 +636,32 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "zuleta/admin/app/Controller/AppController.php",
+					"settings":
+					{
+						"buffer_size": 1496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1489,
+								1489
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 803.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

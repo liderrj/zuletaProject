@@ -101,4 +101,28 @@ class UsuariosController extends AppController {
 			$this->Session->setFlash(__('El usuario no pudo ser borrado, intente nuevamente.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+
+	function login(){
+         $this->set('error', false);
+         if (!empty($this->data)){
+            $someone = $this->Usuario->findByLogin($this->data['Usuario']['login']);
+            if(!empty($someone['Usuario']['clave']) && $someone['Usuario']['clave'] == $this->data['Usuario']['clave']){
+                  $this->Session->write('login', $someone['Usuario']);
+                  $this->redirect('/');
+               }
+               else{
+                  $this->set('error', true);
+               }
+            }
+         }
+   	function logout(){
+   	
+   		$this->Session->delete('login');
+   		$this->redirect('/');
+
+   	}  
+   	   
+
+
+}
