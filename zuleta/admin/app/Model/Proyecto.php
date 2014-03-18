@@ -13,6 +13,13 @@ class Proyecto extends AppModel {
  */
 	public $useTable = 'proyecto';
 
+	public $belongsTo = array(
+        'Categorium' => array(
+            'className' => 'Categorium',
+            'foreignKey' => 'id_categoria'
+        )
+    );
+
 /**
  * Validation rules
  *
@@ -23,6 +30,8 @@ class Proyecto extends AppModel {
             'ruta'
         )
     );
+
+
 	public $validate = array(
 		'titulo' => array(
 			'notEmpty' => array(
@@ -124,7 +133,7 @@ class Proyecto extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'ruta' => array(
+		/*'ruta' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -133,7 +142,7 @@ class Proyecto extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		),*/
 		'fechaPresentacion' => array(
 			'date' => array(
 				'rule' => array('date'),

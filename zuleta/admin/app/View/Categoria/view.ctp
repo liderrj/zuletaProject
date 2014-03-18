@@ -1,5 +1,5 @@
 <div class="categoria view">
-<h2><?php echo __('Categorium'); ?></h2>
+<h2><?php echo __('Categoría'); ?></h2>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
@@ -14,11 +14,11 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Categorium'), array('action' => 'edit', $categorium['Categorium']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Categorium'), array('action' => 'delete', $categorium['Categorium']['id']), null, __('Are you sure you want to delete # %s?', $categorium['Categorium']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Categoria'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Categorium'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Categoría'), array('action' => 'edit', $categorium['Categorium']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar Categoría'), array('action' => 'delete', $categorium['Categorium']['id']), null, __('Are you sure you want to delete # %s?', $categorium['Categorium']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Categorías'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nueva Categoría'), array('action' => 'add')); ?> </li>
 	</ul>
 </div>

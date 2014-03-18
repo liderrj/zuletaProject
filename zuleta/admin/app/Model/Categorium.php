@@ -6,11 +6,20 @@ App::uses('AppModel', 'Model');
  */
 class Categorium extends AppModel {
 
+	//public $hasMany = array('Proyecto');
+
+	public $hasMany = array(
+        'Proyecto' => array(
+            'className' => 'Proyecto',
+            'foreignKey' => 'id_categoria'
+        )
+    );
 /**
  * Validation rules
  *
  * @var array
  */
+
 	public $validate = array(
 		'nombre' => array(
 			'notEmpty' => array(

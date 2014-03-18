@@ -1,28 +1,31 @@
 <div class="proyectos form">
-<?php echo $this->Form->create('Proyecto'); ?>
+<?php echo $this->Form->create('Proyecto',array('type' => 'file')); ?>
 	<fieldset>
-		<legend><?php echo __('Add Proyecto'); ?></legend>
+		<legend><?php echo __('Añadir Proyecto'); ?></legend>
 	<?php
-		echo $this->Form->input('titulo');
-		echo $this->Form->input('tematica');
-		echo $this->Form->input('id_categoria');
-		echo $this->Form->input('tipo');
+		echo $this->Form->input('titulo',array('label'=>'Título'));
+		echo $this->Form->input('tematica',array('label'=>'Temática'));
+		echo $this->Form->input('Categoria',array('label'=>'Categoría'));
+		echo $this->Form->input('id_categoria',array('type'=>'hidden'));
+		echo $this->Form->input('tipo', array(
+    		'options' => array('Pasantía', 'Tesis')
+		));
 		echo $this->Form->input('autor');
 		echo $this->Form->input('tutor');
 		echo $this->Form->input('jurado');
-		echo $this->Form->input('ubicacion');
+		echo $this->Form->input('ubicacion',array('label'=>'Ubicación'));
 		echo $this->Form->input('resumen');
 		echo $this->Form->input('cota');
 		echo $this->Form->input('ruta', array('type' => 'file'));
-		echo $this->Form->input('fechaPresentacion');
+		echo $this->Form->input('fechaPresentacion',array('label'=>'Fecha de Presentación', 'dateFormat' => 'DMY'));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Guardar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Proyectos'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Listar Proyectos'), array('action' => 'index')); ?></li>
 	</ul>
 </div>

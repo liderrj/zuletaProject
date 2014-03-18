@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"prin",
+				"print_r"
+			],
+			[
+				"Cat",
+				"Categoria"
+			],
+			[
+				"Categ",
+				"categoría"
+			],
+			[
+				"cat",
+				"categoria"
+			],
+			[
+				"bo",
+				"borrada"
+			],
+			[
+				"pu",
+				"pudo"
+			],
+			[
+				"In",
+				"Inválida"
+			],
+			[
+				"Ca",
+				"Categoría"
+			],
+			[
+				"cate",
+				"categoría"
+			],
+			[
+				"pro",
+				"proyecto"
+			],
+			[
 				"te",
 				"text-decoration"
 			],
@@ -112,107 +152,11 @@
 	"buffers":
 	[
 		{
-			"file": "zuleta/admin/app/Config/database.php",
+			"file": "zuleta/admin/app/View/Categoria/edit.ctp",
 			"settings":
 			{
-				"buffer_size": 2965,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/Config/core.php",
-			"settings":
-			{
-				"buffer_size": 14370,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/View/Usuarios/add.ctp",
-			"settings":
-			{
-				"buffer_size": 849,
+				"buffer_size": 698,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/webroot/js/scripts.js",
-			"settings":
-			{
-				"buffer_size": 2147,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/View/Usuarios/edit.ctp",
-			"settings":
-			{
-				"buffer_size": 1043,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/Controller/UsuariosController.php",
-			"settings":
-			{
-				"buffer_size": 3231,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/View/Usuarios/index.ctp",
-			"settings":
-			{
-				"buffer_size": 2074,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/Model/Usuario.php",
-			"settings":
-			{
-				"buffer_size": 1503,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/View/Usuarios/view.ctp",
-			"settings":
-			{
-				"buffer_size": 1211,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/View/Layouts/default.ctp",
-			"settings":
-			{
-				"buffer_size": 3093,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/webroot/css/cake.generic.css",
-			"settings":
-			{
-				"buffer_size": 15721,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/View/Pages/home.ctp",
-			"settings":
-			{
-				"buffer_size": 702,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "zuleta/admin/app/Controller/AppController.php",
-			"settings":
-			{
-				"buffer_size": 1496,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -264,11 +208,36 @@
 	},
 	"file_history":
 	[
-		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Model/Usuario.php",
-		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Layouts/default.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/webroot/js/scripts.js",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Proyectos/add.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Proyectos/edit.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Proyectos/view.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Controller/ProyectosController.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Proyectos/index.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Categoria/view.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Model/Proyecto.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Controller/CategoriaController.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Model/Categorium.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Categoria/index.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Config/bootstrap.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/lib/Cake/View/Helper/FormHelper.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Config/routes.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Controller/UsuariosController.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Categoria/add.ctp",
 		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Usuarios/index.ctp",
-		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/webroot/css/cake.generic.css",
 		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Config/database.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Controller/uploadsController.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Uploads/index.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Model/AppModel.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Controller/AppController.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Usuarios/view.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Pages/home.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/webroot/css/cake.generic.css",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Layouts/default.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Model/Usuario.php",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Usuarios/edit.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/View/Usuarios/add.ctp",
+		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/admin/app/Config/core.php",
 		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/zuleta/zuleta/index.html",
 		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/isac/site/assets/css/isac-styles.less",
 		"/C/BitNami/wampstack-5.4.22-0/apache2/htdocs/isac/site/js/jquery.mrjared.scroll.slide.coffee",
@@ -313,77 +282,23 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "zuleta/admin/app/Config/database.php",
+					"file": "zuleta/admin/app/View/Categoria/edit.ctp",
 					"settings":
 					{
-						"buffer_size": 2965,
+						"buffer_size": 698,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2777,
-								2777
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1525.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "zuleta/admin/app/Config/core.php",
-					"settings":
-					{
-						"buffer_size": 14370,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5285.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "zuleta/admin/app/View/Usuarios/add.ctp",
-					"settings":
-					{
-						"buffer_size": 849,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								181,
-								181
+								631,
+								631
 							]
 						],
 						"settings":
@@ -393,276 +308,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "zuleta/admin/app/webroot/js/scripts.js",
-					"settings":
-					{
-						"buffer_size": 2147,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								806,
-								806
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 960.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "zuleta/admin/app/View/Usuarios/edit.ctp",
-					"settings":
-					{
-						"buffer_size": 1043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								979,
-								979
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "zuleta/admin/app/Controller/UsuariosController.php",
-					"settings":
-					{
-						"buffer_size": 3231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3223,
-								3223
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2446.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "zuleta/admin/app/View/Usuarios/index.ctp",
-					"settings":
-					{
-						"buffer_size": 2074,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								921,
-								921
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "zuleta/admin/app/Model/Usuario.php",
-					"settings":
-					{
-						"buffer_size": 1503,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 66.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "zuleta/admin/app/View/Usuarios/view.ctp",
-					"settings":
-					{
-						"buffer_size": 1211,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1015,
-								1098
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 454.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "zuleta/admin/app/View/Layouts/default.ctp",
-					"settings":
-					{
-						"buffer_size": 3093,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2589,
-								2589
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1572.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "zuleta/admin/app/webroot/css/cake.generic.css",
-					"settings":
-					{
-						"buffer_size": 15721,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15719,
-								15719
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 16935.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "zuleta/admin/app/View/Pages/home.ctp",
-					"settings":
-					{
-						"buffer_size": 702,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								40,
-								6
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CakePHP (tmbundle)/Syntaxes/(HTML) CakePHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "zuleta/admin/app/Controller/AppController.php",
-					"settings":
-					{
-						"buffer_size": 1496,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1489,
-								1489
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 803.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

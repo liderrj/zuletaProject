@@ -6,24 +6,27 @@
 			<?php echo h($proyecto['Proyecto']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Titulo'); ?></dt>
+		<dt><?php echo __('Título'); ?></dt>
 		<dd>
 			<?php echo h($proyecto['Proyecto']['titulo']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Tematica'); ?></dt>
+		<dt><?php echo __('Temática'); ?></dt>
 		<dd>
 			<?php echo h($proyecto['Proyecto']['tematica']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Id Categoria'); ?></dt>
+		<dt><?php echo __('Categoría'); ?></dt>
 		<dd>
-			<?php echo h($proyecto['Proyecto']['id_categoria']); ?>
+			<?php echo h($proyecto['Categorium']['nombre']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Tipo'); ?></dt>
 		<dd>
-			<?php echo h($proyecto['Proyecto']['tipo']); ?>
+			<?php switch(h($proyecto['Proyecto']['tipo'])){
+			case '0': echo "Pasantía"; break;
+			case '1': echo "Tesis"; break;
+			} ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Autor'); ?></dt>
@@ -61,7 +64,7 @@
 			<?php echo h($proyecto['Proyecto']['ruta']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('FechaPresentacion'); ?></dt>
+		<dt><?php echo __('Fecha de Presentación'); ?></dt>
 		<dd>
 			<?php echo h($proyecto['Proyecto']['fechaPresentacion']); ?>
 			&nbsp;
@@ -69,11 +72,11 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Proyecto'), array('action' => 'edit', $proyecto['Proyecto']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Proyecto'), array('action' => 'delete', $proyecto['Proyecto']['id']), null, __('Are you sure you want to delete # %s?', $proyecto['Proyecto']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Proyectos'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Proyecto'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Proyecto'), array('action' => 'edit', $proyecto['Proyecto']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Borrar Proyecto'), array('action' => 'delete', $proyecto['Proyecto']['id']), null, __('¿Usted esta seguro de borrar el proyecto %s?', $proyecto['Proyecto']['titulo'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Proyectos'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nuevo Proyecto'), array('action' => 'add')); ?> </li>
 	</ul>
 </div>

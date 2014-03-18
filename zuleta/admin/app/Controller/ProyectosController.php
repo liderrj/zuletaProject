@@ -13,6 +13,7 @@ class ProyectosController extends AppController {
  *
  * @var array
  */
+	
 	public $components = array('Paginator');
 
 /**
@@ -38,6 +39,8 @@ class ProyectosController extends AppController {
 		}
 		$options = array('conditions' => array('Proyecto.' . $this->Proyecto->primaryKey => $id));
 		$this->set('proyecto', $this->Proyecto->find('first', $options));
+
+		//$this->set('categorias', $this->Proyecto->Categorium->find('list',array('fields'=>array('id','nombre'))));
 	}
 
 /**
@@ -46,6 +49,7 @@ class ProyectosController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->set('categorias', $this->Proyecto->Categorium->find('list',array('fields'=>array('id','nombre'))));
 		if ($this->request->is('post')) {
 			$this->Proyecto->create();
 			if ($this->Proyecto->save($this->request->data)) {
@@ -65,6 +69,7 @@ class ProyectosController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->set('categorias', $this->Proyecto->Categorium->find('list',array('fields'=>array('id','nombre'))));
 		if (!$this->Proyecto->exists($id)) {
 			throw new NotFoundException(__('Invalid proyecto'));
 		}

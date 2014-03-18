@@ -14,6 +14,7 @@ class CategoriaController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	
 
 /**
  * index method
@@ -46,6 +47,7 @@ class CategoriaController extends AppController {
  * @return void
  */
 	public function add() {
+		
 		if ($this->request->is('post')) {
 			$this->Categorium->create();
 			if ($this->Categorium->save($this->request->data)) {

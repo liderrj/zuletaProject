@@ -69,7 +69,16 @@ function validarClaveEd(){
 //Llamadas
 
 $(document).on('ready',function(e){
-	
+
+		var valor = $('#ProyectoCategoria').val();
+			$('#ProyectoIdCategoria').val(valor);
+
+		$('#ProyectoCategoria').change(function(e){
+			valor = $(this).val();
+			$('#ProyectoIdCategoria').val(valor);
+			
+		});
+		
 		$("#valnum").keydown(function(event) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ( $.inArray(event.keyCode,[46,8,9,27,13,190]) !== -1 ||
