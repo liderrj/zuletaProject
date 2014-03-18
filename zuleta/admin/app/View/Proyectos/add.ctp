@@ -13,7 +13,7 @@
 		echo $this->Form->input('ubicacion');
 		echo $this->Form->input('resumen');
 		echo $this->Form->input('cota');
-		echo $this->Form->input('ruta');
+		echo $this->Form->input('ruta', array('type' => 'file'));
 		echo $this->Form->input('fechaPresentacion');
 	?>
 	</fieldset>

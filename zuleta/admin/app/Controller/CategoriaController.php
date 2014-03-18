@@ -34,7 +34,7 @@ class CategoriaController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Categorium->exists($id)) {
-			throw new NotFoundException(__('Invalid categorium'));
+			throw new NotFoundException(__('Categoría Inválida.'));
 		}
 		$options = array('conditions' => array('Categorium.' . $this->Categorium->primaryKey => $id));
 		$this->set('categorium', $this->Categorium->find('first', $options));
@@ -49,10 +49,10 @@ class CategoriaController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Categorium->create();
 			if ($this->Categorium->save($this->request->data)) {
-				$this->Session->setFlash(__('The categorium has been saved.'));
+				$this->Session->setFlash(__('La categoría ha sido guardada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The categorium could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La categoría no pudo ser guardada, intente nuevamente.'));
 			}
 		}
 	}
@@ -66,14 +66,14 @@ class CategoriaController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Categorium->exists($id)) {
-			throw new NotFoundException(__('Invalid categorium'));
+			throw new NotFoundException(__('Categoría Inválida.'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Categorium->save($this->request->data)) {
-				$this->Session->setFlash(__('The categorium has been saved.'));
+				$this->Session->setFlash(__('La categoría ha sido guardada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The categorium could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La categoría no pudo ser guardada, intente nuevamente.'));
 			}
 		} else {
 			$options = array('conditions' => array('Categorium.' . $this->Categorium->primaryKey => $id));
@@ -91,13 +91,13 @@ class CategoriaController extends AppController {
 	public function delete($id = null) {
 		$this->Categorium->id = $id;
 		if (!$this->Categorium->exists()) {
-			throw new NotFoundException(__('Invalid categorium'));
+			throw new NotFoundException(__('Categoría Inválida'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Categorium->delete()) {
-			$this->Session->setFlash(__('The categorium has been deleted.'));
+			$this->Session->setFlash(__('La categoría ha sido borrada.'));
 		} else {
-			$this->Session->setFlash(__('The categorium could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('La categoría no pudo ser borrada, intente nuevamente.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
@@ -121,7 +121,7 @@ class CategoriaController extends AppController {
  */
 	public function admin_view($id = null) {
 		if (!$this->Categorium->exists($id)) {
-			throw new NotFoundException(__('Invalid categorium'));
+			throw new NotFoundException(__('Categoría Inválida.'));
 		}
 		$options = array('conditions' => array('Categorium.' . $this->Categorium->primaryKey => $id));
 		$this->set('categorium', $this->Categorium->find('first', $options));
@@ -136,10 +136,10 @@ class CategoriaController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Categorium->create();
 			if ($this->Categorium->save($this->request->data)) {
-				$this->Session->setFlash(__('The categorium has been saved.'));
+				$this->Session->setFlash(__('La categoría ha sido guardada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The categorium could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La categoría no pudo ser guardada, intente nuevamente.'));
 			}
 		}
 	}
@@ -153,14 +153,14 @@ class CategoriaController extends AppController {
  */
 	public function admin_edit($id = null) {
 		if (!$this->Categorium->exists($id)) {
-			throw new NotFoundException(__('Invalid categorium'));
+			throw new NotFoundException(__('Categoría Inválida.'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Categorium->save($this->request->data)) {
-				$this->Session->setFlash(__('The categorium has been saved.'));
+				$this->Session->setFlash(__('La categoría ha sido guardada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The categorium could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La categoría no pudo ser guardada, intente nuevamente.'));
 			}
 		} else {
 			$options = array('conditions' => array('Categorium.' . $this->Categorium->primaryKey => $id));
@@ -178,13 +178,13 @@ class CategoriaController extends AppController {
 	public function admin_delete($id = null) {
 		$this->Categorium->id = $id;
 		if (!$this->Categorium->exists()) {
-			throw new NotFoundException(__('Invalid categorium'));
+			throw new NotFoundException(__('Categoría Inválida'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Categorium->delete()) {
-			$this->Session->setFlash(__('The categorium has been deleted.'));
+			$this->Session->setFlash(__('La categoría ha sido borrada.'));
 		} else {
-			$this->Session->setFlash(__('The categorium could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('La categoría no pudo ser borrada, intente nuevamente.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}}

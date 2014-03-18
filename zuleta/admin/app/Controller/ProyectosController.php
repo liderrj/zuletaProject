@@ -34,7 +34,7 @@ class ProyectosController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Proyecto->exists($id)) {
-			throw new NotFoundException(__('Invalid proyecto'));
+			throw new NotFoundException(__('Proyecto Inválido'));
 		}
 		$options = array('conditions' => array('Proyecto.' . $this->Proyecto->primaryKey => $id));
 		$this->set('proyecto', $this->Proyecto->find('first', $options));
@@ -49,10 +49,10 @@ class ProyectosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Proyecto->create();
 			if ($this->Proyecto->save($this->request->data)) {
-				$this->Session->setFlash(__('The proyecto has been saved.'));
+				$this->Session->setFlash(__('EL proyecto ha sido guardado'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The proyecto could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El proyecto no puedo ser guardado, intente nuevamente.'));
 			}
 		}
 	}
@@ -70,10 +70,10 @@ class ProyectosController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Proyecto->save($this->request->data)) {
-				$this->Session->setFlash(__('The proyecto has been saved.'));
+				$this->Session->setFlash(__('EL proyecto ha sido guardado'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The proyecto could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El proyecto no puedo ser guardado, intente nuevamente.'));
 			}
 		} else {
 			$options = array('conditions' => array('Proyecto.' . $this->Proyecto->primaryKey => $id));
@@ -91,13 +91,13 @@ class ProyectosController extends AppController {
 	public function delete($id = null) {
 		$this->Proyecto->id = $id;
 		if (!$this->Proyecto->exists()) {
-			throw new NotFoundException(__('Invalid proyecto'));
+			throw new NotFoundException(__('Proyecto Inválido'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Proyecto->delete()) {
-			$this->Session->setFlash(__('The proyecto has been deleted.'));
+			$this->Session->setFlash(__('El proyecto ha sido borrado.'));
 		} else {
-			$this->Session->setFlash(__('The proyecto could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('El proyecto no pudo se borrado, intente nuevamente.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
@@ -121,7 +121,7 @@ class ProyectosController extends AppController {
  */
 	public function admin_view($id = null) {
 		if (!$this->Proyecto->exists($id)) {
-			throw new NotFoundException(__('Invalid proyecto'));
+			throw new NotFoundException(__('Proyecto inválido'));
 		}
 		$options = array('conditions' => array('Proyecto.' . $this->Proyecto->primaryKey => $id));
 		$this->set('proyecto', $this->Proyecto->find('first', $options));
@@ -136,10 +136,10 @@ class ProyectosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Proyecto->create();
 			if ($this->Proyecto->save($this->request->data)) {
-				$this->Session->setFlash(__('The proyecto has been saved.'));
+				$this->Session->setFlash(__('El proyecto ha sido guardado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The proyecto could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El proyecto no pudo ser guardado, intente nuevamente.'));
 			}
 		}
 	}
@@ -153,14 +153,14 @@ class ProyectosController extends AppController {
  */
 	public function admin_edit($id = null) {
 		if (!$this->Proyecto->exists($id)) {
-			throw new NotFoundException(__('Invalid proyecto'));
+			throw new NotFoundException(__('Proyecto Inválido.'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Proyecto->save($this->request->data)) {
-				$this->Session->setFlash(__('The proyecto has been saved.'));
+				$this->Session->setFlash(__('El proyecto ha sido guardado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The proyecto could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('El proyecto no pudo ser guardado, intente nuevamente.'));
 			}
 		} else {
 			$options = array('conditions' => array('Proyecto.' . $this->Proyecto->primaryKey => $id));
@@ -178,13 +178,13 @@ class ProyectosController extends AppController {
 	public function admin_delete($id = null) {
 		$this->Proyecto->id = $id;
 		if (!$this->Proyecto->exists()) {
-			throw new NotFoundException(__('Invalid proyecto'));
+			throw new NotFoundException(__('Proyecto Inválido'));
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Proyecto->delete()) {
-			$this->Session->setFlash(__('The proyecto has been deleted.'));
+			$this->Session->setFlash(__('El proyecto ha sido borrado.'));
 		} else {
-			$this->Session->setFlash(__('The proyecto could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('El proyecto no pudo ser borrado, intente nuevamente.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}}

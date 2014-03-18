@@ -18,10 +18,15 @@ class Proyecto extends AppModel {
  *
  * @var array
  */
+	public $actsAs = array(
+        'Upload.Upload' => array(
+            'ruta'
+        )
+    );
 	public $validate = array(
 		'titulo' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -30,8 +35,8 @@ class Proyecto extends AppModel {
 			),
 		),
 		'tematica' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

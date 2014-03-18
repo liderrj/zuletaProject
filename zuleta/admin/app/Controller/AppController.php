@@ -38,13 +38,13 @@ public $components = array(
 );
 public $helpers = array("Session");
 public function beforeFilter(){
-	$this->Session->delete('redi');
+	//$this->Session->delete('redi');
 	
 }
 
 public function afterFilter(){
 
-	if(!$this->Session->check('login')){
+	/*if(!$this->Session->check('login')){
 			
 			if(!$this->Session->check('redi')){
 				$this->Session->write('redi',true);
@@ -53,7 +53,7 @@ public function afterFilter(){
 			}
 				
         
-	}
+	}*/
 
 }
 
