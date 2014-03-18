@@ -173,24 +173,23 @@ ul.list_bullet li a:hover { color: #fff }
 	padding: 50px;
 }
 
-#templatemo_search { float: right; width: 280px; height: 30px; background:url(images/templatemo_search.png) }
+#templatemo_search { position:relative; width: 80%; margin-left:auto; margin-right:auto; text-align:center; }
 #templatemo_search form {
 	margin: 0;
 	padding: 0;
 }
 
 #templatemo_search .txt_field {
-	float: left;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
 	display: block;
 	height: 24px;
-	width: 190px;
+	width: 80%;
 	padding: 3px 5px;
-	margin: 0;
 	color: #666;
 	font-size: 12px;
 	font-variant: normal;
-	border: none;	
-	background: none;
 }
 
 #templatemo_search .sub_btn {
@@ -436,3 +435,12 @@ ul.rc_comment li span { color: #fff }
 .tbl_contactos tr:last-child td{
 	border-bottom:1px solid #FFF;
 	}			
+.resultado{
+	margin:0;
+	margin-bottom:15px;
+	padding:10px;
+	width:100%;
+	background-color:#036;
+	display:inline-block;
+	box-shadow:0px 0px 5px 0px #CCC;
+	}	
